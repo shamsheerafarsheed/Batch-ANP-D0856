@@ -1,0 +1,182 @@
+📌 1. What is Python?
+
+Python is a high-level, interpreted, and general-purpose programming language.
+
+Created by Guido van Rossum and released in 1991.
+
+Emphasizes code readability with a clean and simple syntax (like English).
+
+📌 2. Features of Python
+
+Feature	Description:
+Easy to Learn & Use	Simple syntax, suitable for beginners.
+Interpreted Language	No need for compilation. Code runs line by line.
+Dynamically Typed	No need to declare data types explicitly.
+High-Level Language	Abstracts low-level memory management.
+Platform Independent	Runs on Windows, Mac, Linux, etc.
+Extensive Libraries	Supports NumPy, Pandas, Matplotlib, Django, Flask, etc.
+Object-Oriented & Procedural	Supports both programming paradigms.
+Open Source	      Free to use and distribute.
+
+📌 3. Applications of Python
+Web Development – using Django, Flask.
+
+Data Science & Machine Learning – with Pandas, NumPy, Scikit-learn.
+
+Automation/Scripting – automate repetitive tasks.
+
+Game Development – using Pygame.
+
+Desktop Applications – Tkinter, PyQt.
+
+IoT, Cybersecurity, AI, Cloud Computing – expanding rapidly.
+
+📌 4. Python Installation & Setup
+Download from https://www.python.org
+
+Use IDEs like:
+
+IDLE – built-in
+
+PyCharm
+
+VS Code
+
+Jupyter Notebook
+
+To verify installation:
+
+
+python --version
+
+
+Jupyter installation:
+
+✅ Option 1: Using Anaconda (Recommended for Beginners)
+Step 1: Download Anaconda
+
+Go to: https://www.anaconda.com/products/distribution
+
+Download the installer for your operating system (Windows/Mac/Linux).
+
+Step 2: Install Anaconda
+
+Run the downloaded installer and follow the instructions:
+
+Select "Just Me"
+
+Click "Next" → Choose destination folder → Click "Install"
+
+Check the option: "Add Anaconda to PATH environment variable" (optional, but helpful)
+
+Click "Finish"
+
+Step 3: Launch Jupyter Notebook
+
+Open Anaconda Navigator from the Start Menu
+
+Click on "Launch" under Jupyter Notebook
+
+It will open in your browser at: http://localhost:8888
+
+✅ Option 2: Using pip (If You Already Have Python Installed)
+Step 1: Check if Python is Installed
+
+Open Command Prompt or Terminal and type:
+
+
+python --version
+If not installed, download from: https://www.python.org/downloads/
+
+Step 2: Install pip (if not available)
+
+Most Python installations include pip.
+
+To check:
+
+
+pip --version
+Step 3: Install Jupyter Notebook
+
+In the terminal or command prompt, type:
+
+
+pip install notebook
+Step 4: Run Jupyter Notebook
+
+Start the notebook with:
+
+
+jupyter notebook
+It will open in your browser.
+
+✅ To Stop the Notebook
+Go back to the terminal where Jupyter is running
+
+Press Ctrl + C to stop
+
+Confirm with y and press Enter
+
+💡 Tips:
+You can create .ipynb files directly in the browser using Jupyter
+
+Use ! to run terminal commands inside the notebook (e.g., !pip install pandas)
+
+You can also install JupyterLab (a more advanced interface):
+
+
+pip install jupyterlab
+
+2nd way:
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+✅ Step 1: Install Python
+If Python is not already installed:
+
+Go to: https://www.python.org/downloads/
+
+Download and install the latest version of Python (e.g., Python 3.10 or above).
+
+✅ During installation, make sure to check the box that says:
+
+"Add Python to PATH"
+
+✅ Step 2: Open Command Prompt / Terminal
+Windows: Press Win + R, type cmd, and press Enter.
+
+Mac/Linux: Open Terminal.
+
+✅ Step 3: Upgrade pip (Optional but Recommended)
+
+python -m pip install --upgrade pip
+✅ Step 4: Install Jupyter Notebook Using pip
+
+pip install notebook
+This will install Jupyter and its dependencies.
+
+✅ Step 5: Run Jupyter Notebook
+Once installed, launch it using:
+
+jupyter notebook
+It will open your default browser with the Jupyter dashboard.
+
+You can create new notebooks from there.
+
+✅ (Optional) Install via Anaconda (Alternative Method)
+Anaconda comes pre-installed with Jupyter and many libraries:
+
+Download Anaconda: https://www.anaconda.com/products/distribution
+
+Install it and launch Anaconda Navigator
+
+Click Launch under Jupyter Notebook
+
+✅ Useful Tips
+To stop the server, go back to the terminal and press Ctrl + C twice.
+
+To install Jupyter in a virtual environment:
+
+python -m venv jupyter_env
+jupyter_env\Scripts\activate   # For Windows
+source jupyter_env/bin/activate  # For macOS/Linux
+pip install notebook
