@@ -1,0 +1,48 @@
+import csv
+data=[
+    ["Name","Age","Grade"],
+    ["Joshva",20,"A"],
+    ["Ananya",20,"A"],
+    ["Kalpana",20,"A"],
+     ]
+with open('students.csv',mode='w',newline='') as file:
+     writer=csv.writer(file)
+     writer.writerows(data)
+---------------------------------------
+
+import csv
+with open("sales_data.csv",mode='r')as file:
+    reader=csv.reader(file)
+    for row in reader:
+        print(row)
+          
+----------------------------------------
+import csv
+with open('students.csv',mode='r') as file:
+    reader=csv.DictReader(file)
+    for row in reader:
+        print(f"Name:{row['Name']},Age:{row['Age']},Grade:{row['Grade']}")
+          
+----------------------------------------
+import json
+employee={
+    "name":"Ananya",
+    "Age":21,
+    "Dept":"IT"
+    }
+with open('employee.json',mode='w')as file:
+    json.dump(employee,file)
+
+-------------------------------------------
+
+import json
+
+with open('employee.json',mode='r')as file:
+    data=json.load(file)
+    print(data)
+---------------------------------------
+#converting python object to json
+import json
+students={"Name":"Pooja","Age":21,"Grade":"B"}
+json_data=json.dumps(students)
+print(json_data)
