@@ -1,0 +1,28 @@
+def fibonacci(limit):
+    a,b=0,1
+    while a<limit:
+        yield a;
+        a,b=b,a+b
+for num in fibonacci(15):
+    print(num)
+-----------------------------
+def get_item_pages(items,page_size):
+    for i in range(0,len(items),page_size):
+        yield items[i:i+page_size]
+data=list(range(1,21))#20 items
+for page in get_item_pages(data,5):
+    print("Page:",page)
+
+--------------------------------------
+#Reading  Large file line by line
+def read_file(file_path):
+    with open("Lab.txt","r",encoding="utf-8")as file:
+        for line in file:
+            yield line.strip()
+for line in read_file("Lab.txt"):
+    print(line)
+
+
+    
+        
+------------------------------
